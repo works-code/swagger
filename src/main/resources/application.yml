@@ -1,0 +1,6 @@
+# spring mvc url 패턴 매칭 기법으로 2.6.x 부터
+# PATH_PATTERN_PARSER가 기본값으로 변경 되어 Swagger 연동 부분에서 오류 발생하여 ant_path_matcher로 수정
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
